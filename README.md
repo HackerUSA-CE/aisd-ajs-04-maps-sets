@@ -15,7 +15,6 @@ In this lab, we will explore advanced data structures in JavaScript: **Maps** an
 ### By the end of this lab, you will:
 - Understand how to create, modify, and iterate through **Maps** and **Sets**.
 - Learn how to convert between arrays, maps, and sets to leverage their unique properties.
-- Practice handling data conversions between **Objects** and **Maps** for advanced applications.
 
 ## Expected Project Structure 🏗️
 
