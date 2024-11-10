@@ -282,10 +282,9 @@ carColors.forEach((color, car) => {
 ### Expected Output:
 
 ```bash
-Tesla Model S: White
-BMW 3 Series: Blue
-Audi A4: Black
-
+Toyota Corolla: Blue
+Honda Civic: Red
+Ford Mustang: Black
 ```
 
 ### Explanation:
