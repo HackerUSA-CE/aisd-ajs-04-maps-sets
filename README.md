@@ -395,7 +395,7 @@ Animals Array: dog,cat,dog,bird,cat
 UniqueAnimals Array from Set: dog,cat,bird
 ```
 
-### Explanation of What Happened:
+### Explanation
 
 - **Original Array Creation**:
   - We started with an array called `animalsArray` that included duplicate values: `["dog", "cat", "dog", "bird", "cat"]`.
