@@ -487,7 +487,7 @@ With these skills, you’re now equipped to use **JavaScript Maps and Sets** to 
 
 💾 **Not something to copy and paste** 💾
 
-**Note:**  This lab references a solution file located [here](https://github.com/HackerUSA-CE/aisd-ajs-03-classes-w-inheritance/tree/solution) (link not shown).
+**Note:**  This lab references a solution file located [here](https://github.com/HackerUSA-CE/aisd-ajs-04-maps-sets/tree/solution) (link not shown).
 
 ---
 © All rights reserved to ThriveDX
