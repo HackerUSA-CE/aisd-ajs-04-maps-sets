@@ -117,22 +117,20 @@ Let's move on to accessing values in a `Map` and modifying them. Follow these st
 88
 ```
 
-### Explanation:
+### Explanation
 
 In this step, we demonstrated how to access and modify values in a `Map` and observed how the output changed as a result:
 
-- **Accessing the Initial Value**:
-   - The first code snippet logged the value associated with the key `"John"`:
+- **Accessing the Initial Value**:  
+   The first code snippet logged the value associated with the key `"John"`:  
+   This initial output of `85` confirmed that the key `"John"` existed in the `Map` and had a grade of `85`.
 
-   - **Explanation**: This initial output of `85` confirmed that the key `"John"` existed in the `Map` and had a grade of `85`.
+- **Modifying the Value**:  
+   The second code snippet updated `"John"`'s grade using the `.set()` method:  
+   The `.set()` method was used to change the value associated with the key `"John"` from `85` to `88`. The updated value was then logged to confirm the modification.
 
-- **Modifying the Value**:
-   - The second code snippet updated `"John"`'s grade using the `.set()` method:
- 
-   - **Explanation**: The `.set()` method was used to change the value associated with the key `"John"` from `85` to `88`. The updated value was then logged to confirm the modification.
-
-- **Why the Output Changed:**
-   - The `.set()` method updated the existing entry in the `Map`, replacing the old value (`85`) with the new value (`88`). When the `.get("John")` method was called again, it returned `88`, confirming that the update was applied correctly.
+- **Why the Output Changed**:  
+   The `.set()` method updated the existing entry in the `Map`, replacing the old value (`85`) with the new value (`88`). When the `.get("John")` method was called again, it returned `88`, confirming that the update was applied correctly.
 
 This demonstrated how to use `.set()` to modify values in a `Map` and ensured that data retrieval using `.get()` reflects the most recent changes.
 
@@ -172,24 +170,25 @@ true
 3
 ```
 
-### Explanation:
+### Explanation
 
 In this section, we used two methods to interact with the `studentGrades` map:
 
-- **Checking if a Key Exists**:
-   - The `.has()` method checks if a specific key is present in the `Map`. The method returned `true`, confirming that the key `"Sam"` exists in the `studentGrades` map.
+- **Checking if a Key Exists**:  
+   The `.has()` method checks if a specific key is present in the `Map`. The method returned `true`, confirming that the key `"Sam"` exists in the `studentGrades` map.
 
-- **Getting the Number of Entries**:
-   - The `.size` property returns the total number of key-value pairs in the `Map`. The output was `3`, indicating that the `studentGrades` map contains three entries: `"John"`, `"Jane"`, and `"Sam"`.
+- **Getting the Number of Entries**:  
+   The `.size` property returns the total number of key-value pairs in the `Map`. The output was `3`, indicating that the `studentGrades` map contains three entries: `"John"`, `"Jane"`, and `"Sam"`.
 
-- **Why These Methods Are Useful:**
-   - The `.has()` method is helpful for checking the presence of a key before performing operations that rely on its existence, such as retrieving or updating the value.
-   - The `.size` property provides an immediate count of the number of entries, which is valuable for validating the number of items stored in the `Map` and determining if the `Map` is empty or populated.
+- **Why These Methods Are Useful**:  
+   The `.has()` method is helpful for checking the presence of a key before performing operations that rely on its existence, such as retrieving or updating the value.  
+   The `.size` property provides an immediate count of the number of entries, which is valuable for validating the number of items stored in the `Map` and determining if the `Map` is empty or populated.
 
-- **Output:**
-   - When both methods are run together, the combined output will be `true` (confirming that the key `"Sam"` exists) and `3` (showing the total number of entries in the `Map`).
+- **Output**:  
+   When both methods are run together, the combined output will be `true` (confirming that the key `"Sam"` exists) and `3` (showing the total number of entries in the `Map`).
 
 These steps demonstrate the effectiveness of `Map` methods for key existence checks and determining the size of a `Map`, making data handling and structure management straightforward.
+
 
 ##
 
@@ -232,20 +231,21 @@ Student Grades before clear: 2
 Student Grades after clear: 0
 ```
 
-### Explanation:
-- **Logging the Value of "Sam" Before Deleting**:
-   - We use the `.get()` method to check and display the value associated with the key `"Sam"`. This confirms that `"Sam"` exists in the `Map` and shows its current value before any modifications are made.
+### Explanation
 
-- **Deleting an Entry**:
-  - The `.delete()` method is used to remove the entry for `"Sam"` from the `Map`. After deletion, calling `.get("Sam")` returns `undefined`, which indicates that the key no longer exists in the `Map`. The `undefined` value in JavaScript signifies that there is no value associated with the specified key.
+- **Logging the Value of "Sam" Before Deleting**:  
+   We use the `.get()` method to check and display the value associated with the key `"Sam"`. This confirms that `"Sam"` exists in the `Map` and shows its current value before any modifications are made.
 
-- **Checking the Size Before Clearing**:
-  - We log the size of the `Map` using the `.size` property to confirm how many key-value pairs remain after deleting `"Sam"`. This helps ensure that the `Map` still contains data before clearing it.
+- **Deleting an Entry**:  
+  The `.delete()` method is used to remove the entry for `"Sam"` from the `Map`. After deletion, calling `.get("Sam")` returns `undefined`, which indicates that the key no longer exists in the `Map`. The `undefined` value in JavaScript signifies that there is no value associated with the specified key.
 
-- **Clearing the Map**:
-   - The `.clear()` method removes all entries from the `Map`, resetting it to an empty state. Logging the size of the `Map` after calling `.clear()` confirms that the `Map` has been emptied, as the size will be `0`.
+- **Checking the Size Before Clearing**:  
+  We log the size of the `Map` using the `.size` property to confirm how many key-value pairs remain after deleting `"Sam"`. This helps ensure that the `Map` still contains data before clearing it.
 
-### Summary:
+- **Clearing the Map**:  
+   The `.clear()` method removes all entries from the `Map`, resetting it to an empty state. Logging the size of the `Map` after calling `.clear()` confirms that the `Map` has been emptied, as the size will be `0`.
+
+### Summary
    - The `.delete()` method is useful for removing specific entries from a `Map` by their keys.
    - The `.clear()` method is used to remove all entries, effectively resetting the `Map`.
    - The output `undefined` confirms that an attempt to access a non-existent key returns no value, indicating that the key has been removed from the `Map`.
@@ -287,24 +287,25 @@ Honda Civic: Red
 Ford Mustang: Black
 ```
 
-### Explanation:
+### Explanation
 
-- **Creating a New Map**:
-   - We create a new `Map` to store car models as keys and their corresponding colors as values. This structure allows us to associate each car model with its color in an organized manner.
+- **Creating a New Map**:  
+   We create a new `Map` to store car models as keys and their corresponding colors as values. This structure allows us to associate each car model with its color in an organized manner.
 
-- **Iterating Over the Map with forEach**:
-   - The `.forEach()` method is used to iterate over the `Map`. The method takes a callback function with two parameters: the `value` (color) and the `key` (car model). This lets us access both the car model and its color during each iteration.
+- **Iterating Over the Map with forEach**:  
+   The `.forEach()` method is used to iterate over the `Map`. The method takes a callback function with two parameters: the `value` (color) and the `key` (car model). This lets us access both the car model and its color during each iteration.
 
-- **Logging Each Entry**:
-  -  During the iteration, we log each car model and its color to the console in the format `key: value`. This helps verify that the `Map` has been populated correctly and allows us to see each entry displayed clearly.
+- **Logging Each Entry**:  
+  During the iteration, we log each car model and its color to the console in the format `key: value`. This helps verify that the `Map` has been populated correctly and allows us to see each entry displayed clearly.
 
-- **Purpose and Benefits**:
-   - Using `.forEach()` on a `Map` makes it easy to loop through all key-value pairs, which is useful for displaying data, applying transformations, or performing operations on each entry.
+- **Purpose and Benefits**:  
+   Using `.forEach()` on a `Map` makes it easy to loop through all key-value pairs, which is useful for displaying data, applying transformations, or performing operations on each entry.
 
-### Summary:
+### Summary
 - The `.forEach()` method provides an efficient way to iterate over a `Map` and access each key-value pair.
 - Logging during the iteration confirms that data is correctly stored and retrievable.
 - This approach demonstrates how to work with `Map` data structures effectively for organized data handling and display.
+
 
 ##
 
