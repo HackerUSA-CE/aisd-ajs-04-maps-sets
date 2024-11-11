@@ -1,20 +1,21 @@
-# JavaScript Advanced: Maps and Sets
+# JavaScript Advanced: Working with Maps
 
-![Screenshot showing the JavaScript code solution implementing Maps and Sets with operations such as adding, deleting, and converting data structures.](./assets/images/example.png)
+![Screenshot showing the JavaScript code solution implementing Maps  with operations such as adding, deleting, and converting data structures.](./assets/images/example.png)
 
 ---
 
 ## Description 📄
 
-In this lab, we will explore advanced data structures in JavaScript: **Maps** and **Sets**. These structures, introduced in ES6, offer distinct advantages over traditional arrays and objects for specific programming tasks, such as efficient lookups, ordered key-value pairs, and handling unique data sets.
+In this lab, we dive into **Maps**, a powerful data structure in JavaScript introduced with ES6. Maps allow you to store key-value pairs where keys can be of any data type, making them distinct from standard objects. Maps also maintain the insertion order of items and are optimized for lookups and updates.
 
 ### Key Concepts Covered:
-- **Maps**: Used for storing key-value pairs where keys can be any data type. Maps maintain the insertion order of entries and provide efficient data retrieval.
-- **Sets**: Used to store unique values of any type. They automatically filter out duplicates and offer methods for checking and managing items.
+- **Maps**: Learn to create, update, access, and delete entries in a map.
+- **Map Iteration and Methods**: Utilize Map-specific methods for efficient data management.
 
 ### By the end of this lab, you will:
-- Understand how to create, modify, and iterate through **Maps** and **Sets**.
-- Learn how to convert between arrays, maps, and sets to leverage their unique properties.
+- Understand how to initialize, modify, and access **Map** entries.
+- Learn to use methods for checking key existence, counting entries, and iterating through Maps.
+
 
 ## Expected Project Structure 🏗️
 
@@ -308,118 +309,9 @@ Ford Mustang: Black
 
 ##
 
-## 7. **Working with Sets and Adding Values**
-
-In this step, we will create a new `Set`, log its initial state, and then add a value to it to demonstrate how `Set` operations work.
-
-- [ ] Use the following code to create and add a value to a `Set`:
-
-```javascript
-// Working with Sets: Declare the set before using it
-const uniqueNames = new Set();
-
-// Log the initial state of the Set
-console.log(uniqueNames); // Output: Set(0) {}
-
-// Add a value to the Set
-uniqueNames.add("David");
-
-// Log the Set after adding a value
-console.log(uniqueNames); // Output: Set(1) { 'David' }
-```
 
 
-   - [ ] Run your code using Node.js in the terminal:
-
-
-    ```bash
-    node index.js
-    ```
-
-### Expected Output:
-
-```bash
-Set(0) {}
-Set(1) { 'David' }
-```
-
-### Explanation:
-
-**Creating the Set**:
-   We start by creating a `Set` named `uniqueNames`. A `Set` is a built-in JavaScript data structure used to store unique values, ensuring that no duplicates are present.
-
-**Logging the Initial State**:
-   Before adding any values, we log the `Set` to the console. The output `Set(0) {}` confirms that the `Set` is empty and contains zero elements. The `0` indicates the size of the `Set`.
-
-**Adding a Value**:
-   We use the `.add()` method to insert the value `"David"` into the `Set`. This method ensures that only unique values are stored. If the value `"David"` had already been present, the `Set` would not have added it again.
-
-**Logging the Set After Adding a Value**:
-   After adding `"David"`, we log the `Set` again. The output `Set(1) { 'David' }` indicates that the `Set` now contains one element. The `1` reflects the current size of the `Set`, and `{ 'David' }` shows the stored value.
-
-### Summary:
-- A `Set` starts empty, which is confirmed by logging `Set(0) {}`.
-- The `.add()` method adds a value to the `Set` while ensuring uniqueness.
-- Logging the `Set` after adding a value shows `Set(1) { 'David' }`, confirming that the value has been successfully added and the size has increased to `1`.
-
-##
-
-## 8. **Converting Between Sets and Arrays**
-
-In this step, we will explore how to convert an array to a `Set` to remove duplicates and then convert the `Set` back to an array.
-
-- [ ] Use the following code to convert an array to a `Set` and back to an array:
-
-```javascript
-// Converting between Sets and Arrays
-const animalsArray = ["dog", "cat", "dog", "bird", "cat"];
-const uniqueAnimals = Array.from(new Set(animalsArray));
-
-// Logging the original and unique arrays
-console.log(`Animals Array: ${animalsArray}`); // Outputs the full array 
-console.log(`UniqueAnimals Array from Set: ${uniqueAnimals}`); // Output: ['dog', 'cat', 'bird']
-```
-
-
-   - [ ] Run your code using Node.js in the terminal:
-
-
-    ```bash
-    node index.js
-    ```
-
-### Expected:
-
-```bash
-Animals Array: dog,cat,dog,bird,cat
-UniqueAnimals Array from Set: dog,cat,bird
-```
-
-### Explanation
-
-- **Original Array Creation**:
-  - We started with an array called `animalsArray` that included duplicate values: `["dog", "cat", "dog", "bird", "cat"]`.
-
-- **Converting the Array to a Set**:
-  - We passed `animalsArray` into `new Set()` to create a `Set` named `uniqueAnimals`. 
-  - The `Set` automatically removed duplicate entries, resulting in only unique values being stored: `{"dog", "cat", "bird"}`.
-
-- **Converting the Set Back to an Array**:
-  - We used `Array.from(uniqueAnimals)` to convert the `Set` back into an array.
-  - This step created an array from the `Set` that maintained only the unique values: `["dog", "cat", "bird"]`.
-
-- **Logging the Original and Unique Arrays**:
-  - The first `console.log()` displayed the `animalsArray` in its original state, showing all elements, including duplicates.
-  - The second `console.log()` displayed `uniqueAnimals` after conversion, showing the final array with duplicates removed.
-
-### Key Takeaways:
-- **Set for Uniqueness**: Using a `Set` is an efficient way to remove duplicates from an array.
-- **Array Conversion**: `Array.from()` allows you to convert a `Set` back to an array, preserving the unique elements.
-- **Order Preservation**: The order of elements in the `Set` reflects their first appearance in the original array.
-
-##
-
-## 9. **Final Step: Commit and Push Your Project to GitHub**
+## 7. **Commit and Push Your Project to GitHub**
 
 In this final step, you’ll commit your changes and push your project to GitHub to save and share your work. This ensures that your project is versioned and backed up remotely.
 
@@ -464,20 +356,18 @@ In this step, we committed our changes and pushed the project to GitHub to creat
 ##
 
 ## Conclusion 📄
+In this lab, you learned how to use **JavaScript Maps** to efficiently manage collections of data with flexible key-value pairings. By following each step, you gained practical experience with:
 
-In this lab, you learned how to use **JavaScript Maps and Sets** to efficiently manage collections of data with unique characteristics. By following each step, you gained practical experience with:
-
-- **Creating and manipulating Maps** to store and access key-value pairs, allowing for dynamic data management with methods like `.set()`, `.get()`, `.delete()`, and `.clear()`.
-- **Using Sets** to store unique values, ensuring that duplicates are automatically filtered out while supporting operations like `.add()` and `.forEach()` for iteration.
-- **Converting between Sets and Arrays** to leverage the benefits of both data structures, such as removing duplicates from an array and converting a Set back to an array for further manipulation.
-- **Iterating over Maps and Sets** using methods like `.forEach()` to access and display entries in a clear, organized manner.
+- **Creating and manipulating Maps** to store and access key-value pairs, enabling dynamic data management with methods like `.set()`, `.get()`, `.delete()`, and `.clear()`.
+- **Checking and iterating over Map entries** using methods like `.has()` and `.forEach()` to check for key existence, retrieve values, and display entries in a clear, organized manner.
+- **Using Map-specific methods** to handle data more efficiently, especially when insertion order or non-string keys are required, setting Maps apart from standard JavaScript objects.
 
 ### Key Takeaways:
-- **Efficient Data Storage with Unique Constraints**: Maps and Sets provide powerful tools for managing data collections, especially when working with unique keys and values or when performance and order are important.
-- **Readable and Maintainable Code**: By using Maps and Sets, you create more readable and maintainable code structures, especially when compared to plain objects and arrays for complex data operations.
-- **Flexible Data Conversion**: The ability to convert arrays to Sets and back enables you to handle data cleanup, such as removing duplicates, while maintaining compatibility with array methods for more extensive data processing.
+- **Enhanced Data Storage with Flexible Keys**: Maps allow for efficient data collections where the type of the key can vary and order is preserved, which is useful for advanced data structures and efficient lookups.
+- **Readable and Maintainable Code**: Using Maps helps create more organized and maintainable code, particularly when compared to arrays and objects in complex applications.
+- **Efficient Iteration and Modification**: With Map-specific methods, it’s easy to add, modify, and remove entries or to clear all entries in one step, making Maps ideal for scenarios that require dynamic data manipulation.
 
-With these skills, you’re now equipped to use **JavaScript Maps and Sets** to handle unique collections of data, streamline operations, and enhance the maintainability and scalability of your code. Continue practicing by implementing these structures in different scenarios and combining them with other JavaScript features to build more robust and flexible applications!
+With these skills, you’re now equipped to use **JavaScript Maps** to handle collections of data, streamline operations, and enhance the maintainability and scalability of your code. Continue practicing by incorporating Maps in different scenarios and combining them with other JavaScript features to build more robust and flexible applications!
 
 
 ### Solution codebase 👀
@@ -485,7 +375,7 @@ With these skills, you’re now equipped to use **JavaScript Maps and Sets** to 
 
 💾 **Not something to copy and paste** 💾
 
-**Note:**  This lab references a solution file located [here](https://github.com/HackerUSA-CE/aisd-ajs-04-maps-sets/tree/solution) (link not shown).
+**Note:**  This lab references a solution file located [here](https://github.com/HackerUSA-CE/aisd-ajs-04-maps/tree/solution) (link not shown).
 
 ---
 © All rights reserved to ThriveDX
