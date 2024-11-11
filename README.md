@@ -149,7 +149,7 @@ In this step, we will use methods to check if specific keys exist in the `Map` a
    console.log(studentGrades.has("Sam")); // Output: true
   ```
 
-  ## 5. **Next, Let's Check the Number of Entries in the Map**
+Next, Let's Check the Number of Entries in the Map
 
 - [ ] Use the following code to log the number of key-value pairs in the `studentGrades` map:
 
@@ -182,11 +182,11 @@ In this section, we used two methods to interact with the `studentGrades` map:
 **Getting the Number of Entries**:
    The `.size` property returns the total number of key-value pairs in the `Map`. The output was `3`, indicating that the `studentGrades` map contains three entries: `"John"`, `"Jane"`, and `"Sam"`.
 
-### Why These Methods Are Useful:
+**Why These Methods Are Useful:**
 - The `.has()` method is helpful for checking the presence of a key before performing operations that rely on its existence, such as retrieving or updating the value.
 - The `.size` property provides an immediate count of the number of entries, which is valuable for validating the number of items stored in the `Map` and determining if the `Map` is empty or populated.
 
-### Output:
+**Output:**
 When both methods are run together, the combined output will be:
 `true` (confirming that the key `"Sam"` exists) and `3` (showing the total number of entries in the `Map`).
 
