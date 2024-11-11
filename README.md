@@ -36,7 +36,7 @@ javascript-maps-sets/
 
 ##
 
-## 2. **Setting Up Your Map and Set**
+## 2. **Setting Up Your Map**
 
 Now that you have created the `index.js` file, let's start by initializing a `Map` and adding entries to it.
 
