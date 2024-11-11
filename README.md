@@ -131,7 +131,7 @@ In this step, we demonstrated how to access and modify values in a `Map` and obs
  
    - **Explanation**: The `.set()` method was used to change the value associated with the key `"John"` from `85` to `88`. The updated value was then logged to confirm the modification.
 
-### Why the Output Changed:
+**Why the Output Changed:**
 - The `.set()` method updated the existing entry in the `Map`, replacing the old value (`85`) with the new value (`88`). When the `.get("John")` method was called again, it returned `88`, confirming that the update was applied correctly.
 
 This demonstrated how to use `.set()` to modify values in a `Map` and ensured that data retrieval using `.get()` reflects the most recent changes.
@@ -340,18 +340,6 @@ In this final step, you’ll commit your changes and push your project to GitHub
      ```bash
      git push -u origin main
      ```
-
-### Explanation of Step 9: Commit and Push to GitHub
-
-In this step, we committed our changes and pushed the project to GitHub to create a backup and enable version control:
-
-- **Initialized Git**: We used `git init` to start version control in the project folder if it hadn’t been initialized previously.
-- **Added Changes to Staging**: The `git add .` command staged all project files, preparing them for the commit.
-- **Committed the Changes**: The `git commit` command with a descriptive message recorded the changes in the local repository.
-- **Connected to GitHub**: We linked the local repository to a remote repository on GitHub using `git remote add origin`.
-- **Pushed to GitHub*
-
-
 
 ##
 
