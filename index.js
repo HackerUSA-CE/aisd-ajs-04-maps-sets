@@ -42,21 +42,6 @@ carColors.forEach((color, car) => {
   console.log(`${car}: ${color}`);
 });
 
-// Working with Sets: Declare the set before using it
-const uniqueNames = new Set();
 
-// Create a Set and adding a value to a Set
-console.log(uniqueNames); 
-// Now add a Value
-uniqueNames.add("David");
-console.log(uniqueNames); 
-
-// Converting between Sets and Arrays
-const animalsArray = ["dog", "cat", "dog", "bird", "cat"];
-const uniqueAnimals = Array.from(new Set(animalsArray));
-
-// Logging the original and unique arrays
-console.log(`Animals Array: ${animalsArray}`); // Outputs the full array 
-console.log(`UniqueAnimals Array from Set: ${uniqueAnimals}`); // Output: ['dog', 'cat', 'bird']
 
 
